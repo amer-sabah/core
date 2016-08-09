@@ -23,6 +23,9 @@ public class CountryEntity {
     @Column(name = "iso2")
     private String iso2;
 
+    @Column(name = "iso3")
+    private String iso3;
+
     @Column(name = "name")
     private String name;
 }
