@@ -1,0 +1,27 @@
+group 'com.ribbonmix'
+version '1.0'
+
+apply plugin: 'java'
+apply plugin: 'maven-publish'
+
+publishing {
+    publications {
+        mavenJava(MavenPublication) {
+            from components.java
+        }
+    }
+}
+
+sourceCompatibility = 1.7
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile "junit:junit:3.8.1"
+    compileOnly "org.projectlombok:lombok:1.16.6"
+    compile 'org.springframework.data:spring-data-jpa:1.10.2.RELEASE'
+    compile "org.hibernate:hibernate-entitymanager:5.1.0.Final"
+    compile "mysql:mysql-connector-java:5.1.38"
+}
