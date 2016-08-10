@@ -12,7 +12,8 @@ publishing {
     }
 }
 
-sourceCompatibility = 1.7
+//noinspection GroovyUnusedAssignment
+sourceCompatibility = 1.8
 
 repositories {
     mavenCentral()
