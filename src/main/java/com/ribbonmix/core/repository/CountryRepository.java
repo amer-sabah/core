@@ -9,4 +9,6 @@ import org.springframework.data.jpa.repository.JpaRepository;
 public interface CountryRepository extends JpaRepository<CountryEntity, Integer> {
 
     CountryEntity findOneByIso2(String iso2);
+
+    CountryEntity findOneByIso3(String iso3);
 }
