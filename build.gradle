@@ -1,5 +1,5 @@
 group 'com.ribbonmix'
-version '1.0'
+version '1.2'
 
 apply plugin: 'java'
 apply plugin: 'maven-publish'
@@ -20,10 +20,11 @@ repositories {
 }
 
 dependencies {
-    testCompile "junit:junit:3.8.1"
+    testCompile "junit:junit:4.11"
+    testCompile "org.springframework:spring-test:2.5"
     compileOnly "org.projectlombok:lombok:1.16.6"
     compile 'org.springframework.data:spring-data-jpa:1.10.2.RELEASE'
-    compile "org.hibernate:hibernate-entitymanager:5.1.0.Final"
+    compile "org.hibernate:hibernate-entitymanager:4.3.11.Final"
     compile "mysql:mysql-connector-java:5.1.38"
     compile "org.apache.commons:commons-lang3:3.0"
 

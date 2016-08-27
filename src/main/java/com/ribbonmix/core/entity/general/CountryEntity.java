@@ -1,5 +1,6 @@
-package com.ribbonmix.core.entity;
+package com.ribbonmix.core.entity.general;
 
+import com.ribbonmix.core.entity.BaseEntity;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 

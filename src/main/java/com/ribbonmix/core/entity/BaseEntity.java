@@ -12,7 +12,7 @@ import java.time.LocalDateTime;
 
 @MappedSuperclass
 @Data
-class BaseEntity {
+public class BaseEntity {
 
     @Column(name = "create_timestamp")
     private LocalDateTime createTimestamp;

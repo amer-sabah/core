@@ -1,8 +1,8 @@
-package com.ribbonmix.core.entity;
+package com.ribbonmix.core.entity.general;
 
+import com.ribbonmix.core.entity.BaseEntity;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
-import lombok.ToString;
 
 import javax.persistence.*;
 import java.time.ZoneId;
@@ -15,7 +15,6 @@ import java.time.ZoneId;
 @Table(name = "city", schema = "general")
 @Data
 @EqualsAndHashCode(of = {"shortName"}, callSuper = true)
-@ToString()
 public class CityEntity extends BaseEntity {
 
     @Id

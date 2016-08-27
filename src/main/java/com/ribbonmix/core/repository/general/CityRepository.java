@@ -1,6 +1,6 @@
-package com.ribbonmix.core.repository;
+package com.ribbonmix.core.repository.general;
 
-import com.ribbonmix.core.entity.CityEntity;
+import com.ribbonmix.core.entity.general.CityEntity;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 /**
